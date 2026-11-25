@@ -1,0 +1,16 @@
+DAY 1:
+    how did it improve for that 2x+1=y?
+    step 1: predict: the model uses its current weight and bias to predict the outputs.
+    step 2: measure error: MSELoss compares its predictions with [3, 5, 7, 9].
+    step 3: calculate gradients: loss.backward() calculates how changes in the parameters would affect the loss.
+    step 4: update parameters: optimize.step() adjusts the weight and bias in directions intended to reduce the loss.
+    * Notice something important: the training data doesn't change, but the model's parameters do. That's why its predictions improve over time.
+    - 1000 epoch: prediction 10.99, expected value 11.
+    - 10 epoch: prediction 8.9, expected value 11.
+    - 100 epoch: prediction 11.27, expected value 11.
+    - 200 epoch: prediction 11.07, expected value 11.
+    - 300 epoch: prediction 10.87, expected value 11.
+    - 2000 epoch: prediction 11.00061, expected value 11.
+    - 3000 epoch: prediction 10.99, expected value 11.
+    - 4000 epoch: prediction 10.99, expected value 11.
+    -
