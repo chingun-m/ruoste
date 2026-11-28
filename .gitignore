@@ -1,0 +1,32 @@
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# Training data
+data/*
+!data/README.md
+
+# Model weights and checkpoints
+checkpoints/*
+!checkpoints/.gitkeep
+*.pt
+*.pth
+*.safetensors
+*.bin
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Rust build output
+rust-inference/target/
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
